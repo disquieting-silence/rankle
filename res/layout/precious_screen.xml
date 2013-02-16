@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:dsq="http://schemas.android.com/apk/res/dsq.rankle"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1.0">
+
+        <ListView android:id="@+id/precious_list"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"/>
+        <TextView android:id="@android:id/empty"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/precious_screen_list_empty"/>
+    </LinearLayout>
+
+    <ImageButton android:id="@+id/precious_screen_add"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/icon_add"/>
+
+
+    <LinearLayout style="@style/Commandbar">
+        <dsq.rankle.layout.custom.commandbar.DefaultButtonIcon
+                android:id="@+id/precious_screen_edit"
+                dsq:icon="icon"
+                android:paddingTop="8px"
+                style="@style/CommandbarIcon"/>
+
+        <dsq.rankle.layout.custom.commandbar.DefaultButtonIcon
+                android:id="@+id/precious_screen_delete"
+                dsq:icon="icon_delete"
+                android:paddingTop="8px"
+                style="@style/CommandbarIcon"/>
+
+    </LinearLayout>
+</LinearLayout>

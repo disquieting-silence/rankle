@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import dsq.rankle.R;
 import dsq.rankle.db.api.DbLifecycle;
 import dsq.rankle.db.api.DefaultDbLifecycle;
+import dsq.rankle.db.precious.DefaultPreciousDbAdapter;
+import dsq.rankle.db.precious.PreciousDbAdapter;
 import dsq.rankle.viper.DefaultIdStore;
 import dsq.rankle.viper.IdStore;
 import dsq.thedroid.ui.Buttons;
@@ -24,14 +26,19 @@ public class PreciousScreen extends Activity
     private final DbLifecycle lifecycle = new DefaultDbLifecycle();
 
     private IdStore cid = new DefaultIdStore();
+    private PreciousDbAdapter adapter;
 
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        final SQLiteDatabase db = lifecycle.open(this);
+        adapter = getAdapter();
+    }
 
+    private PreciousDbAdapter getAdapter() {
+        final SQLiteDatabase db = lifecycle.open(this);
+        return new DefaultPreciousDbAdapter(db);
     }
 
     protected void onDestroy() {

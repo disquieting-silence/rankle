@@ -1,11 +1,12 @@
 package dsq.rankle.ui.precious;
 
+import dsq.rankle.db.precious.PreciousDbAdapter;
 import dsq.rankle.viper.IdAction;
 import dsq.rankle.viper.SimpleAction;
 
 public class DefaultUiActions implements UiActions {
     @Override
-    public IdAction delete() {
+    public IdAction delete(final PreciousDbAdapter adapter) {
         return new IdAction() {
             @Override
             public void run(final long id) {
@@ -15,7 +16,7 @@ public class DefaultUiActions implements UiActions {
     }
 
     @Override
-    public IdAction rename() {
+    public IdAction rename(final PreciousDbAdapter adapter) {
         return new IdAction() {
             @Override
             public void run(final long id) {
@@ -25,7 +26,7 @@ public class DefaultUiActions implements UiActions {
     }
 
     @Override
-    public SimpleAction add() {
+    public SimpleAction add(final PreciousDbAdapter adapter) {
         return new SimpleAction() {
             @Override
             public void run() {
@@ -35,7 +36,7 @@ public class DefaultUiActions implements UiActions {
     }
 
     @Override
-    public SimpleAction refresh() {
+    public SimpleAction refresh(final PreciousDbAdapter adapter) {
         return new SimpleAction() {
             @Override
             public void run() {
