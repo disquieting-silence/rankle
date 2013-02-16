@@ -1,8 +1,8 @@
 package dsq.rankle.db.precious;
 
-import dsq.thedroid.db.DbAdapter;
+import dsq.rankle.data.precious.PreciousV;
+import dsq.sycophant.thedroid.DbCrudAdapter;
 
-public interface PreciousDbAdapter extends DbAdapter {
-    long create(String name);
-    boolean update(long id, String name);
+public interface PreciousDbAdapter extends DbCrudAdapter<PreciousV> {
+
 }

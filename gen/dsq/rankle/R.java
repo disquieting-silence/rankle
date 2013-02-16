@@ -19,9 +19,10 @@ containing a value of this type.
         public static final int icon=0x7f010000;
     }
     public static final class color {
-        public static final int background_highlights=0x7f040006;
+        public static final int background_highlights=0x7f040007;
         public static final int black=0x7f040001;
         public static final int blue=0x7f040000;
+        public static final int cadbee=0x7f040006;
         public static final int grey=0x7f040002;
         public static final int red=0x7f040003;
         public static final int shaded=0x7f040005;
