@@ -1,4 +1,5 @@
 /home/smith/projects/android/rankle/bin/classes.dex : \
+/home/smith/projects/android/rankle/bin/classes/dsq/rankle/screen/ItemScreen.class \
 /home/smith/projects/android/rankle/bin/classes/dsq/rankle/R.class \
 /home/smith/projects/android/rankle/bin/classes/dsq/rankle/R$string.class \
 /home/smith/projects/android/rankle/bin/classes/dsq/rankle/R$layout.class \
