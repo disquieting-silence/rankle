@@ -20,7 +20,7 @@ public class DefaultSelectableDataList<A> implements SelectableDataList<A> {
 
     private long selectedId = -1;
 
-    private ItemAction<A> selectAction;
+    private ItemAction<A> selectAction = new NoopItemAction<A>();
 
     public DefaultSelectableDataList(final ListActivity activity, final DbAdapter adapter, final ListDefinition<A> definition, final int row) {
         this.adapter = adapter;

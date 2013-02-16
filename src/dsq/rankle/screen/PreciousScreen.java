@@ -1,6 +1,7 @@
 package dsq.rankle.screen;
 
 import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -8,19 +9,21 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import dsq.rankle.R;
+import dsq.rankle.data.precious.PreciousV;
 import dsq.rankle.db.api.DbLifecycle;
 import dsq.rankle.db.api.DefaultDbLifecycle;
 import dsq.rankle.db.precious.DefaultPreciousDbAdapter;
 import dsq.rankle.db.precious.PreciousDbAdapter;
-import dsq.rankle.viper.DefaultIdStore;
-import dsq.rankle.viper.IdStore;
+import dsq.rankle.ui.precious.DefaultPreciousListDefinition;
+import dsq.rankle.ui.precious.PreciousListDefinition;
+import dsq.rankle.viper.*;
 import dsq.thedroid.ui.Buttons;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PreciousScreen extends Activity
+public class PreciousScreen extends ListActivity
 {
 
     private final DbLifecycle lifecycle = new DefaultDbLifecycle();
@@ -32,8 +35,12 @@ public class PreciousScreen extends Activity
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.precious_screen);
         adapter = getAdapter();
+
+        final PreciousListDefinition definition = new DefaultPreciousListDefinition();
+        final SelectableDataList<PreciousV> list = new DefaultSelectableDataList<PreciousV>(this, adapter, definition, R.layout.precious_list_row);
+        list.refresh();
     }
 
     private PreciousDbAdapter getAdapter() {

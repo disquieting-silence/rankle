@@ -30,7 +30,10 @@ public class PreciousTable implements Table {
     }
 
     public String[] load() {
-        return new String[0];
+        return new String[] {
+            "INSERT INTO PRECIOUS (name) VALUES ('The Dark Knight Rises')",
+            "INSERT INTO PRECIOUS (name) VALUES ('Batman')"
+        };
     }
 
     public String[] allColumns() {
