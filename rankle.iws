@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c0ba5e7-c629-437f-8171-a99e414f4984" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/data/general/Factory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/data/precious/DefaultPreciousFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/data/precious/PreciousFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ant.properties" afterPath="$PROJECT_DIR$/ant.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/dsq/rankle/R.java" afterPath="$PROJECT_DIR$/gen/dsq/rankle/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rankle.iws" afterPath="$PROJECT_DIR$/rankle.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/precious_screen.xml" afterPath="$PROJECT_DIR$/res/layout/precious_screen.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/db/precious/DefaultPreciousDbAdapter.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/db/precious/DefaultPreciousDbAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/db/precious/PreciousDbAdapter.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/db/precious/PreciousDbAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/ui/precious/DefaultPreciousListDefinition.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/ui/precious/DefaultPreciousListDefinition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/ui/precious/DefaultUiActions.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/ui/precious/DefaultUiActions.java" />
     </list>
     <ignored path="rankle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,12 +86,22 @@
       <file leaf-file-name="PreciousScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="23" selection-start="3752" selection-end="3752" vertical-scroll-proportion="0.512">
+            <state line="88" column="11" selection-start="3254" selection-end="3254" vertical-scroll-proportion="0.712">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1599#1610#0" expanded="true" />
-                <element signature="e#2577#2596#0" expanded="true" />
+                <element signature="e#1728#1739#0" expanded="true" />
+                <element signature="e#2735#2754#0" expanded="true" />
+                <element signature="e#3415#3438#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Commandbar.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/commandbar/Commandbar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="17" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,15 +139,6 @@
         <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/precious/DefaultPreciousListDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="35" column="13" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PreciousFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/precious/PreciousFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="25" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -879,13 +867,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/precious/PreciousListDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
@@ -994,13 +975,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/commandbar/Commandbar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="23" selection-start="3752" selection-end="3752" vertical-scroll-proportion="0.512">
+        <state line="88" column="11" selection-start="3254" selection-end="3254" vertical-scroll-proportion="0.712">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1599#1610#0" expanded="true" />
-            <element signature="e#2577#2596#0" expanded="true" />
+            <element signature="e#1728#1739#0" expanded="true" />
+            <element signature="e#2735#2754#0" expanded="true" />
+            <element signature="e#3415#3438#0" expanded="true" />
           </folding>
         </state>
       </provider>

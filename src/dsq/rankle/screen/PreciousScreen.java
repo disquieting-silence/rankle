@@ -18,11 +18,14 @@ import dsq.rankle.ui.precious.DefaultPreciousListDefinition;
 import dsq.rankle.ui.precious.PreciousListDefinition;
 import dsq.sycophant.action.IdAction;
 import dsq.sycophant.action.ItemAction;
+import dsq.sycophant.action.SimpleAction;
 import dsq.sycophant.action.SingleAction;
 import dsq.sycophant.datalist.DefaultSelectableDataList;
 import dsq.sycophant.datalist.SelectableDataList;
 import dsq.sycophant.store.DefaultIdStore;
 import dsq.sycophant.store.IdStore;
+import dsq.sycophant.ui.button.Buttons;
+import dsq.sycophant.ui.button.DefaultButtons;
 import dsq.sycophant.ui.commandbar.Commandbar;
 import dsq.sycophant.ui.commandbar.DefaultCommandbar;
 import dsq.sycophant.ui.dialog.DefaultDialogs;
@@ -48,6 +51,7 @@ public class PreciousScreen extends ListActivity
         }
     };
     private Commandbar commands;
+    private Buttons buttons;
 
     /** Called when the activity is first created. */
     @Override
@@ -72,16 +76,41 @@ public class PreciousScreen extends ListActivity
         actions.put(R.id.precious_screen_edit, new IdAction() {
             @Override
             public void run(final long id) {
-                Intent intent = new Intent();
-                intent.putExtra(DialogConstants.RENAME_PRECIOUS_DIALOG, id);
-                setIntent(intent);
-                removeDialog(DialogConstants.RENAME_PRECIOUS);
-                showDialog(DialogConstants.RENAME_PRECIOUS);
+                showDialogFor(id, DialogConstants.RENAME_PRECIOUS_DIALOG, DialogConstants.RENAME_PRECIOUS);
 
+            }
+        });
+        actions.put(R.id.precious_screen_delete, new IdAction() {
+            @Override
+            public void run(final long id) {
+                adapter.deleteById(id);
+                list.refresh();
             }
         });
         commands = new DefaultCommandbar(this, actions, cid);
         commands.register();
+
+        final Map<Integer, SimpleAction> buttonActions = new HashMap<Integer, SimpleAction>();
+        buttonActions.put(R.id.precious_screen_add, new SimpleAction() {
+            @Override
+            public void run() {
+                displayDialog(DialogConstants.ADD_PRECIOUS);
+            }
+        });
+        buttons = new DefaultButtons(this, buttonActions);
+        buttons.register();
+    }
+
+    private void showDialogFor(final long id, final String dialogTag, final int dialogId) {
+        Intent intent = new Intent();
+        intent.putExtra(dialogTag, id);
+        setIntent(intent);
+        displayDialog(dialogId);
+    }
+
+    private void displayDialog(final int dialogId) {
+        removeDialog(dialogId);
+        showDialog(dialogId);
     }
 
     private PreciousDbAdapter getAdapter() {
