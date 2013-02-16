@@ -1,8 +1,8 @@
 package dsq.rankle.ui.precious;
 
 import dsq.rankle.db.precious.PreciousDbAdapter;
-import dsq.rankle.viper.IdAction;
-import dsq.rankle.viper.SimpleAction;
+import dsq.sycophant.action.IdAction;
+import dsq.sycophant.action.SimpleAction;
 
 public class DefaultUiActions implements UiActions {
     @Override

@@ -26,13 +26,13 @@
 
 
     <LinearLayout style="@style/Commandbar">
-        <dsq.rankle.layout.custom.commandbar.DefaultButtonIcon
+        <dsq.sycophant.layout.commandbar.button.DefaultButtonIcon
                 android:id="@+id/precious_screen_edit"
                 dsq:icon="icon"
                 android:paddingTop="8px"
                 style="@style/CommandbarIcon"/>
 
-        <dsq.rankle.layout.custom.commandbar.DefaultButtonIcon
+        <dsq.sycophant.layout.commandbar.button.DefaultButtonIcon
                 android:id="@+id/precious_screen_delete"
                 dsq:icon="icon_delete"
                 android:paddingTop="8px"

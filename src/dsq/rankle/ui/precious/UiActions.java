@@ -1,9 +1,9 @@
 package dsq.rankle.ui.precious;
 
 import dsq.rankle.db.precious.PreciousDbAdapter;
-import dsq.rankle.viper.IdAction;
-import dsq.rankle.viper.IntentAction;
-import dsq.rankle.viper.SimpleAction;
+import dsq.sycophant.action.IdAction;
+import dsq.sycophant.action.SimpleAction;
+
 
 public interface UiActions {
     IdAction delete(PreciousDbAdapter adapter);

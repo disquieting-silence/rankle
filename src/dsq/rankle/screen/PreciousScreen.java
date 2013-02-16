@@ -1,13 +1,8 @@
 package dsq.rankle.screen;
 
-import android.app.Activity;
 import android.app.ListActivity;
-import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import dsq.rankle.R;
 import dsq.rankle.data.precious.PreciousV;
 import dsq.rankle.db.api.DbLifecycle;
@@ -16,12 +11,10 @@ import dsq.rankle.db.precious.DefaultPreciousDbAdapter;
 import dsq.rankle.db.precious.PreciousDbAdapter;
 import dsq.rankle.ui.precious.DefaultPreciousListDefinition;
 import dsq.rankle.ui.precious.PreciousListDefinition;
-import dsq.rankle.viper.*;
-import dsq.thedroid.ui.Buttons;
-
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import dsq.sycophant.datalist.DefaultSelectableDataList;
+import dsq.sycophant.datalist.SelectableDataList;
+import dsq.sycophant.store.DefaultIdStore;
+import dsq.sycophant.store.IdStore;
 
 public class PreciousScreen extends ListActivity
 {
