@@ -29,23 +29,27 @@ containing a value of this type.
         public static final int yellow=0x7f040004;
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
-        public static final int icon2=0x7f020001;
-        public static final int icon3=0x7f020002;
-        public static final int icon_add=0x7f020003;
-        public static final int icon_blank=0x7f020004;
-        public static final int icon_box=0x7f020005;
-        public static final int icon_delete=0x7f020006;
-        public static final int icon_disabled=0x7f020007;
-        public static final int icon_edit=0x7f020008;
-        public static final int icon_edit_pressed=0x7f020009;
-        public static final int icon_help=0x7f02000a;
-        public static final int icon_off=0x7f02000b;
-        public static final int icon_on=0x7f02000c;
-        public static final int icon_on_16=0x7f02000d;
-        public static final int icon_pressed=0x7f02000e;
-        public static final int icon_widget_cancel48=0x7f02000f;
-        public static final int transparent=0x7f020010;
+        public static final int evidence=0x7f020000;
+        public static final int highlighted_tab=0x7f020001;
+        public static final int house=0x7f020002;
+        public static final int icon=0x7f020003;
+        public static final int icon2=0x7f020004;
+        public static final int icon3=0x7f020005;
+        public static final int icon_add=0x7f020006;
+        public static final int icon_blank=0x7f020007;
+        public static final int icon_box=0x7f020008;
+        public static final int icon_delete=0x7f020009;
+        public static final int icon_disabled=0x7f02000a;
+        public static final int icon_edit=0x7f02000b;
+        public static final int icon_edit_pressed=0x7f02000c;
+        public static final int icon_help=0x7f02000d;
+        public static final int icon_off=0x7f02000e;
+        public static final int icon_on=0x7f02000f;
+        public static final int icon_on_16=0x7f020010;
+        public static final int icon_pressed=0x7f020011;
+        public static final int icon_widget_cancel48=0x7f020012;
+        public static final int thief=0x7f020013;
+        public static final int transparent=0x7f020014;
     }
     public static final class id {
         public static final int precious_name=0x7f070000;

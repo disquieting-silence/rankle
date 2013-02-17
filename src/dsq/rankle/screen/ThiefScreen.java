@@ -112,6 +112,12 @@ public class ThiefScreen extends ListActivity {
     }
 
     @Override
+    protected void onPause() {
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        super.onPause();
+    }
+
+    @Override
     protected Dialog onCreateDialog(final int id) {
         switch (id) {
             case ADD_THIEF: return dialogs.create(this, adapter, "Thief: ", NAME, refreshList);

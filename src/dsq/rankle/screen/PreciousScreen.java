@@ -113,6 +113,12 @@ public class PreciousScreen extends ListActivity {
     }
 
     @Override
+    protected void onPause() {
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        super.onPause();
+    }
+
+    @Override
     protected void onSaveInstanceState(final Bundle outState) {
         super.onSaveInstanceState(outState);
     }

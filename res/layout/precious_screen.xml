@@ -9,20 +9,20 @@
     <LinearLayout style="@style/Tabbar">
         <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
                 android:id="@+id/precious_tab_precious"
-                dsq:icon="icon"
-                android:paddingTop="8px"
+                dsq:icon="house"
+                android:paddingTop="0px"
                 style="@style/TabbarIcon"/>
 
         <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
                 android:id="@+id/precious_tab_thief"
-                dsq:icon="icon_delete"
-                android:paddingTop="8px"
+                dsq:icon="thief"
+                android:paddingTop="0px"
                 style="@style/TabbarIcon"/>
 
         <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
                 android:id="@+id/precious_tab_evidence"
-                dsq:icon="icon_delete"
-                android:paddingTop="8px"
+                dsq:icon="evidence"
+                android:paddingTop="0px"
                 style="@style/TabbarIcon"/>
     </LinearLayout>
 
@@ -50,7 +50,7 @@
     <LinearLayout style="@style/Commandbar">
         <dsq.sycophant.layout.commandbar.button.DefaultButtonIcon
                 android:id="@+id/precious_screen_edit"
-                dsq:icon="icon"
+                dsq:icon="icon_edit"
                 android:paddingTop="8px"
                 style="@style/CommandbarIcon"/>
 
