@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">ItemScreen</string>
     <string name="precious_screen_list_empty">No precious.</string>
+    <string name="thief_screen_list_empty">Lots of honour. No thieves.</string>
 </resources>

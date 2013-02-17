@@ -48,41 +48,55 @@ containing a value of this type.
         public static final int transparent=0x7f020010;
     }
     public static final class id {
+        public static final int p2=0x7f070008;
+        public static final int p3=0x7f070009;
         public static final int precious_name=0x7f070000;
-        public static final int precious_screen_add=0x7f070001;
-        public static final int precious_screen_delete=0x7f070003;
-        public static final int precious_screen_edit=0x7f070002;
+        public static final int precious_screen_add=0x7f070004;
+        public static final int precious_screen_delete=0x7f070006;
+        public static final int precious_screen_edit=0x7f070005;
+        public static final int tab_evidence=0x7f070003;
+        public static final int tab_precious=0x7f070001;
+        public static final int tab_thief=0x7f070002;
+        public static final int thief_name=0x7f070007;
+        public static final int thief_screen_add=0x7f07000a;
+        public static final int thief_screen_delete=0x7f07000c;
+        public static final int thief_screen_edit=0x7f07000b;
     }
     public static final class layout {
         public static final int main=0x7f030000;
         public static final int precious_list_row=0x7f030001;
         public static final int precious_screen=0x7f030002;
+        public static final int thief_list_row=0x7f030003;
+        public static final int thief_screen=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
         public static final int precious_screen_list_empty=0x7f050001;
+        public static final int thief_screen_list_empty=0x7f050002;
     }
     public static final class style {
         public static final int Commandbar=0x7f060000;
         public static final int CommandbarIcon=0x7f060001;
+        public static final int Tabbar=0x7f060002;
+        public static final int TabbarIcon=0x7f060003;
     }
     public static final class styleable {
-        /** Attributes that can be used with a CommandBarIconLayout.
+        /** Attributes that can be used with a IconLayout.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CommandBarIconLayout_icon dsq.rankle:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #IconLayout_icon dsq.rankle:icon}</code></td><td></td></tr>
            </table>
-           @see #CommandBarIconLayout_icon
+           @see #IconLayout_icon
          */
-        public static final int[] CommandBarIconLayout = {
+        public static final int[] IconLayout = {
             0x7f010000
         };
         /**
           <p>This symbol is the offset where the {@link dsq.rankle.R.attr#icon}
-          attribute's value can be found in the {@link #CommandBarIconLayout} array.
+          attribute's value can be found in the {@link #IconLayout} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -93,6 +107,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name android:icon
         */
-        public static final int CommandBarIconLayout_icon = 0;
+        public static final int IconLayout_icon = 0;
     };
 }

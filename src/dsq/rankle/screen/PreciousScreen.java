@@ -30,12 +30,20 @@ import dsq.sycophant.ui.commandbar.Commandbar;
 import dsq.sycophant.ui.commandbar.DefaultCommandbar;
 import dsq.sycophant.ui.dialog.DefaultDialogs;
 import dsq.sycophant.ui.dialog.Dialogs;
+import dsq.sycophant.ui.dialog.TextDialogIdAction;
+import dsq.sycophant.ui.dialog.TextDialogSimpleAction;
+import dsq.sycophant.ui.tabbar.DefaultTabbar;
+import dsq.sycophant.ui.tabbar.Tabbar;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class PreciousScreen extends ListActivity
-{
+import static dsq.rankle.db.precious.PreciousTable.NAME;
+import static dsq.rankle.ui.dialog.DialogConstants.ADD_PRECIOUS;
+import static dsq.rankle.ui.dialog.DialogConstants.RENAME_PRECIOUS;
+import static dsq.rankle.ui.dialog.DialogConstants.RENAME_PRECIOUS_DIALOG;
+
+public class PreciousScreen extends ListActivity {
 
     private final DbLifecycle lifecycle = new DefaultDbLifecycle();
 
@@ -50,10 +58,7 @@ public class PreciousScreen extends ListActivity
             list.refresh();
         }
     };
-    private Commandbar commands;
-    private Buttons buttons;
 
-    /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +67,36 @@ public class PreciousScreen extends ListActivity
 
         final PreciousListDefinition definition = new DefaultPreciousListDefinition();
         list = new DefaultSelectableDataList<PreciousV>(this, adapter, definition, R.layout.precious_list_row);
+
+        list.refresh();
+
+        final Map<Integer, IdAction> actions = new HashMap<Integer, IdAction>();
+        actions.put(R.id.precious_screen_edit, new TextDialogIdAction(this, RENAME_PRECIOUS_DIALOG, RENAME_PRECIOUS));
+        actions.put(R.id.precious_screen_delete, new IdAction() {
+            @Override
+            public void run(final long id) {
+                adapter.deleteById(id);
+                list.refresh();
+            }
+        });
+        final Commandbar commands = new DefaultCommandbar(this, actions, cid);
+        commands.register();
+
+        final Map<Integer, SimpleAction> buttonActions = new HashMap<Integer, SimpleAction>();
+        buttonActions.put(R.id.precious_screen_add, new TextDialogSimpleAction(this, ADD_PRECIOUS));
+
+        final Buttons buttons = new DefaultButtons(this, buttonActions);
+        buttons.register();
+
+        final Map<Integer, Class<?>> tabActions = new HashMap<Integer, Class<?>>();
+        tabActions.put(R.id.tab_precious, PreciousScreen.class);
+        tabActions.put(R.id.tab_thief, ThiefScreen.class);
+        tabActions.put(R.id.tab_evidence, EvidenceScreen.class);
+        final Tabbar tabs = new DefaultTabbar(this, tabActions);
+        tabs.register();
+
+        tabs.select(R.id.tab_precious);
+
         list.onSelect(new ItemAction<PreciousV>() {
             @Override
             public void run(final long id, final PreciousV v) {
@@ -70,47 +105,6 @@ public class PreciousScreen extends ListActivity
                 commands.update();
             }
         });
-        list.refresh();
-
-        final Map<Integer, IdAction> actions = new HashMap<Integer, IdAction>();
-        actions.put(R.id.precious_screen_edit, new IdAction() {
-            @Override
-            public void run(final long id) {
-                showDialogFor(id, DialogConstants.RENAME_PRECIOUS_DIALOG, DialogConstants.RENAME_PRECIOUS);
-
-            }
-        });
-        actions.put(R.id.precious_screen_delete, new IdAction() {
-            @Override
-            public void run(final long id) {
-                adapter.deleteById(id);
-                list.refresh();
-            }
-        });
-        commands = new DefaultCommandbar(this, actions, cid);
-        commands.register();
-
-        final Map<Integer, SimpleAction> buttonActions = new HashMap<Integer, SimpleAction>();
-        buttonActions.put(R.id.precious_screen_add, new SimpleAction() {
-            @Override
-            public void run() {
-                displayDialog(DialogConstants.ADD_PRECIOUS);
-            }
-        });
-        buttons = new DefaultButtons(this, buttonActions);
-        buttons.register();
-    }
-
-    private void showDialogFor(final long id, final String dialogTag, final int dialogId) {
-        Intent intent = new Intent();
-        intent.putExtra(dialogTag, id);
-        setIntent(intent);
-        displayDialog(dialogId);
-    }
-
-    private void displayDialog(final int dialogId) {
-        removeDialog(dialogId);
-        showDialog(dialogId);
     }
 
     private PreciousDbAdapter getAdapter() {
@@ -126,17 +120,10 @@ public class PreciousScreen extends ListActivity
     @Override
     protected Dialog onCreateDialog(final int id) {
         switch (id) {
-            case DialogConstants.ADD_PRECIOUS: {
-                return dialogs.create(this, adapter, "Precious: ", PreciousTable.NAME, refreshList);
-            }
-            case DialogConstants.RENAME_PRECIOUS: {
-                return dialogs.update(this, adapter, "Rename: ", DialogConstants.RENAME_PRECIOUS_DIALOG, PreciousTable.NAME, refreshList);
-            }
-            default: {
-                break;
-            }
+            case ADD_PRECIOUS: return dialogs.create(this, adapter, "Precious: ", NAME, refreshList);
+            case RENAME_PRECIOUS: return dialogs.update(this, adapter, "Rename: ", RENAME_PRECIOUS_DIALOG, NAME, refreshList);
+            default: return null;
         }
-        return null;
     }
 
     @Override
@@ -144,112 +131,4 @@ public class PreciousScreen extends ListActivity
         lifecycle.close();
         super.onDestroy();
     }
-
-
-    /*
-    /**
-     * Called when the activity is first created.
-     */
-//    @Override
-//    public void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.riposte_list);
-//
-//        final SQLiteDatabase db = lifecycle.open(this);
-//        final Rabbit<RiposteV> rabbit = new DefaultRabbit<RiposteV>();
-//        final DefaultActionFactory factory = new DefaultActionFactory();
-//        actions = factory.nu(this, db, rabbit);
-//
-//        options = setupOptions();
-//        responses = setupResponses();
-//
-//        commands = setupCommands();
-//        buttons = setupButtons();
-//
-////        registerForContextMenu(getListView());
-//
-//        final ButtonIcon toggleButton = commands.get(R.id.command_toggle);
-//
-//        final ItemAction<RiposteV> onSelect = new ItemAction<RiposteV>() {
-//            public void run(final long id, final RiposteV v) {
-//
-//                cid.set(v.id);
-//                Log.v("ERSATZ", String.valueOf(id));
-//                commands.update();
-//
-//                toggleButton.setImages(v.enabled ? new OnButtonImages() : new OffButtonImages());
-//            }
-//        };
-//
-//        toggleButton.setImages(new OffButtonImages());
-//        rabbit.getList().onSelect(onSelect);
-//        commands.update();
-//
-//        commands.register();
-//        buttons.register();
-//    }
-//
-//    private Buttons setupButtons() {
-//        final Map<Integer, SimpleAction> mapping = new HashMap<Integer, SimpleAction>();
-//        mapping.put(R.id.new_riposte, actions.launchAdd());
-//        return new DefaultButtons(this, mapping);
-//
-//    }
-//
-//    private Commandbar setupCommands() {
-//        final Map<Integer, IdAction> mapping = new HashMap<Integer, IdAction>();
-//        mapping.put(R.id.command_toggle, actions.toggleEnabled());
-//        mapping.put(R.id.command_edit, actions.launchEdit());
-//        mapping.put(R.id.command_delete, actions.delete());
-//        return new DefaultCommandbar(this, mapping, cid);
-//    }
-//
-//    private Options setupOptions() {
-//        final Map<Integer, SimpleAction> mapping = new HashMap<Integer, SimpleAction>();
-//        mapping.put(R.id.settings, actions.launchSettings());
-//        mapping.put(R.id.hack, new SimpleAction() {
-//            public void run() {
-//                final Intent intent = new Intent(LocationReceiver.LOCATION_UPDATE);
-//                intent.putExtra("formatted time", new Date(System.currentTimeMillis()).toString());
-//                new DefaultLocationIntents().send(MainFrame.this, intent);
-//            }
-//        });
-//        return new DefaultOptions(this, mapping);
-//    }
-//
-//    private Responses setupResponses() {
-//        final Map<Integer, IntentAction> failure = new HashMap<Integer, IntentAction>();
-//        failure.put(Requests.ADD_RIPOSTE_REQUEST, actions.cancel());
-//        final Map<Integer, IntentAction> success = new HashMap<Integer, IntentAction>();
-//        final IntentAction refresher = new IntentAction() {
-//            // FIX 22/12/12 Don't really think this is a general UI action, but it might be.
-//            public void run(final Intent intent) {
-//                final SimpleAction runner = actions.refresh();
-//                runner.run();
-//            }
-//        };
-//        success.put(Requests.ADD_RIPOSTE_REQUEST, refresher);
-//        success.put(Requests.EDIT_RIPOSTE_REQUEST, refresher);
-//        return new DefaultResponses(success, failure);
-//    }
-//
-//    protected void onDestroy() {
-//        lifecycle.close();
-//        super.onDestroy();
-//    }
-//
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        return options.onCreate(menu, R.menu.main);
-//    }
-//
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        final boolean result = options.onClick(item);
-//        return result ? result : super.onOptionsItemSelected(item);
-//    }
-//
-//    public void onActivityResult(int reqCode, int resultCode, Intent data) {
-//        super.onActivityResult(reqCode, resultCode, data);
-//        responses.onResult(reqCode, resultCode, data);
-//    }
-
 }

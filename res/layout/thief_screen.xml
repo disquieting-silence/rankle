@@ -8,19 +8,13 @@
 
     <LinearLayout style="@style/Tabbar">
         <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
-                android:id="@+id/tab_precious"
+                android:id="@+id/p2"
                 dsq:icon="icon"
                 android:paddingTop="8px"
                 style="@style/TabbarIcon"/>
 
         <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
-                android:id="@+id/tab_thief"
-                dsq:icon="icon_delete"
-                android:paddingTop="8px"
-                style="@style/TabbarIcon"/>
-
-        <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
-                android:id="@+id/tab_evidence"
+                android:id="@+id/p3"
                 dsq:icon="icon_delete"
                 android:paddingTop="8px"
                 style="@style/TabbarIcon"/>
@@ -38,10 +32,10 @@
         <TextView android:id="@android:id/empty"
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"
-                  android:text="@string/precious_screen_list_empty"/>
+                  android:text="@string/thief_screen_list_empty"/>
     </LinearLayout>
 
-    <ImageButton android:id="@+id/precious_screen_add"
+    <ImageButton android:id="@+id/thief_screen_add"
                  android:layout_width="fill_parent"
                  android:layout_height="wrap_content"
                  android:src="@drawable/icon_add"/>
@@ -49,13 +43,13 @@
 
     <LinearLayout style="@style/Commandbar">
         <dsq.sycophant.layout.commandbar.button.DefaultButtonIcon
-                android:id="@+id/precious_screen_edit"
+                android:id="@+id/thief_screen_edit"
                 dsq:icon="icon"
                 android:paddingTop="8px"
                 style="@style/CommandbarIcon"/>
 
         <dsq.sycophant.layout.commandbar.button.DefaultButtonIcon
-                android:id="@+id/precious_screen_delete"
+                android:id="@+id/thief_screen_delete"
                 dsq:icon="icon_delete"
                 android:paddingTop="8px"
                 style="@style/CommandbarIcon"/>
