@@ -31,7 +31,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     };
 
     private static final String DATABASE_NAME = "rankle";
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, LOG_CURSOR_FACTORY, DATABASE_VERSION);
