@@ -6,15 +6,22 @@
               android:layout_height="fill_parent"
               android:orientation="vertical">
 
+    <!-- Find out how to re-use this tab bar -->
     <LinearLayout style="@style/Tabbar">
         <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
-                android:id="@+id/p2"
+                android:id="@+id/thief_tab_precious"
                 dsq:icon="icon"
                 android:paddingTop="8px"
                 style="@style/TabbarIcon"/>
 
         <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
-                android:id="@+id/p3"
+                android:id="@+id/thief_tab_thief"
+                dsq:icon="icon_delete"
+                android:paddingTop="8px"
+                style="@style/TabbarIcon"/>
+
+        <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
+                android:id="@+id/thief_tab_evidence"
                 dsq:icon="icon_delete"
                 android:paddingTop="8px"
                 style="@style/TabbarIcon"/>

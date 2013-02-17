@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.*;
 import android.util.Log;
 import dsq.rankle.db.precious.PreciousTable;
+import dsq.rankle.db.thief.ThiefTable;
 import dsq.thedroid.db.DbHelper;
 import dsq.thedroid.db.DefaultDbHelper;
 import dsq.thedroid.db.Table;
@@ -21,7 +22,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private DbHelper helper = new DefaultDbHelper();
 
     private Table[] tables = new Table[] {
-        new PreciousTable()
+        new PreciousTable(),
+        new ThiefTable()
 //            new RiposteTable(),
 //            new TargetTable(),
 //            new SettingsTable(),
@@ -29,7 +31,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     };
 
     private static final String DATABASE_NAME = "rankle";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, LOG_CURSOR_FACTORY, DATABASE_VERSION);

@@ -89,13 +89,13 @@ public class PreciousScreen extends ListActivity {
         buttons.register();
 
         final Map<Integer, Class<?>> tabActions = new HashMap<Integer, Class<?>>();
-        tabActions.put(R.id.tab_precious, PreciousScreen.class);
-        tabActions.put(R.id.tab_thief, ThiefScreen.class);
-        tabActions.put(R.id.tab_evidence, EvidenceScreen.class);
+        tabActions.put(R.id.precious_tab_precious, PreciousScreen.class);
+        tabActions.put(R.id.precious_tab_thief, ThiefScreen.class);
+        tabActions.put(R.id.precious_tab_evidence, EvidenceScreen.class);
         final Tabbar tabs = new DefaultTabbar(this, tabActions);
         tabs.register();
 
-        tabs.select(R.id.tab_precious);
+        tabs.select(R.id.precious_tab_precious);
 
         list.onSelect(new ItemAction<PreciousV>() {
             @Override

@@ -1,1 +1,1 @@
-(cd ../sycophant && ant debug && cd ../rankle && rm -rf bin && ant debug install)
+(ant clean && cd ../sycophant && ant debug && cd ../rankle && rm -rf bin && ant debug install)

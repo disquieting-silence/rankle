@@ -8,19 +8,19 @@
 
     <LinearLayout style="@style/Tabbar">
         <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
-                android:id="@+id/tab_precious"
+                android:id="@+id/precious_tab_precious"
                 dsq:icon="icon"
                 android:paddingTop="8px"
                 style="@style/TabbarIcon"/>
 
         <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
-                android:id="@+id/tab_thief"
+                android:id="@+id/precious_tab_thief"
                 dsq:icon="icon_delete"
                 android:paddingTop="8px"
                 style="@style/TabbarIcon"/>
 
         <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
-                android:id="@+id/tab_evidence"
+                android:id="@+id/precious_tab_evidence"
                 dsq:icon="icon_delete"
                 android:paddingTop="8px"
                 style="@style/TabbarIcon"/>
