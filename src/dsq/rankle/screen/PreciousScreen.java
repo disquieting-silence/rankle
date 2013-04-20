@@ -2,7 +2,6 @@ package dsq.rankle.screen;
 
 import android.app.Dialog;
 import android.app.ListActivity;
-import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,8 +11,6 @@ import dsq.rankle.db.api.DbLifecycle;
 import dsq.rankle.db.api.DefaultDbLifecycle;
 import dsq.rankle.db.precious.DefaultPreciousDbAdapter;
 import dsq.rankle.db.precious.PreciousDbAdapter;
-import dsq.rankle.db.precious.PreciousTable;
-import dsq.rankle.ui.dialog.DialogConstants;
 import dsq.rankle.ui.precious.DefaultPreciousListDefinition;
 import dsq.rankle.ui.precious.PreciousListDefinition;
 import dsq.sycophant.action.IdAction;
@@ -32,16 +29,14 @@ import dsq.sycophant.ui.dialog.DefaultDialogs;
 import dsq.sycophant.ui.dialog.Dialogs;
 import dsq.sycophant.ui.dialog.TextDialogIdAction;
 import dsq.sycophant.ui.dialog.TextDialogSimpleAction;
-import dsq.sycophant.ui.tabbar.DefaultTabbar;
+import dsq.sycophant.ui.tabbar.ActivityTabbar;
 import dsq.sycophant.ui.tabbar.Tabbar;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import static dsq.rankle.db.precious.PreciousTable.NAME;
-import static dsq.rankle.ui.dialog.DialogConstants.ADD_PRECIOUS;
-import static dsq.rankle.ui.dialog.DialogConstants.RENAME_PRECIOUS;
-import static dsq.rankle.ui.dialog.DialogConstants.RENAME_PRECIOUS_DIALOG;
+import static dsq.rankle.ui.dialog.DialogConstants.*;
 
 public class PreciousScreen extends ListActivity {
 
@@ -92,7 +87,7 @@ public class PreciousScreen extends ListActivity {
         tabActions.put(R.id.precious_tab_precious, PreciousScreen.class);
         tabActions.put(R.id.precious_tab_thief, ThiefScreen.class);
         tabActions.put(R.id.precious_tab_evidence, EvidenceScreen.class);
-        final Tabbar tabs = new DefaultTabbar(this, tabActions);
+        final Tabbar tabs = new ActivityTabbar(this, tabActions);
         tabs.register();
 
         tabs.select(R.id.precious_tab_precious);

@@ -29,7 +29,7 @@ import dsq.sycophant.ui.dialog.DefaultDialogs;
 import dsq.sycophant.ui.dialog.Dialogs;
 import dsq.sycophant.ui.dialog.TextDialogIdAction;
 import dsq.sycophant.ui.dialog.TextDialogSimpleAction;
-import dsq.sycophant.ui.tabbar.DefaultTabbar;
+import dsq.sycophant.ui.tabbar.ActivityTabbar;
 import dsq.sycophant.ui.tabbar.Tabbar;
 
 import java.util.HashMap;
@@ -86,7 +86,7 @@ public class ThiefScreen extends ListActivity {
         tabActions.put(R.id.thief_tab_precious, PreciousScreen.class);
         tabActions.put(R.id.thief_tab_thief, ThiefScreen.class);
         tabActions.put(R.id.thief_tab_evidence, EvidenceScreen.class);
-        final Tabbar tabs = new DefaultTabbar(this, tabActions);
+        final Tabbar tabs = new ActivityTabbar(this, tabActions);
         tabs.register();
 
         tabs.select(R.id.thief_tab_thief);

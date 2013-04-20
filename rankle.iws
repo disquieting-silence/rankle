@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c0ba5e7-c629-437f-8171-a99e414f4984" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/precious_list_row.xml" afterPath="$PROJECT_DIR$/res/layout/precious_list_row.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/thief_list_row.xml" afterPath="$PROJECT_DIR$/res/layout/thief_list_row.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rankle.iws" afterPath="$PROJECT_DIR$/rankle.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/precious_screen.xml" afterPath="$PROJECT_DIR$/res/layout/precious_screen.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/thief_screen.xml" afterPath="$PROJECT_DIR$/res/layout/thief_screen.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/screen/ThiefScreen.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/screen/ThiefScreen.java" />
     </list>
     <ignored path="rankle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,83 +64,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PreciousScreen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="10" selection-start="4467" selection-end="4623" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2185#2196#0" expanded="true" />
-                <element signature="e#2796#2815#0" expanded="true" />
-                <element signature="e#3346#3369#0" expanded="true" />
-                <element signature="e#3638#3657#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="precious_screen.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/precious_screen.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="35" selection-start="2218" selection-end="2218" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thief_screen.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/thief_screen.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="35" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThiefScreen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/ThiefScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="111" selection-start="3640" selection-end="3640" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1861#1869#0" expanded="true" />
-                <element signature="e#2452#2471#0" expanded="true" />
-                <element signature="e#2990#3013#0" expanded="true" />
-                <element signature="e#3276#3295#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thief_list_row.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/thief_list_row.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="48" selection-start="456" selection-end="456" vertical-scroll-proportion="0.1985294">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultThiefListDefinition.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/thief/DefaultThiefListDefinition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DialogConstants.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="45" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DatabaseHelper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/core/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -147,11 +73,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.markdown" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.markdown">
+      <file leaf-file-name="thief_screen.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/thief_screen.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="42" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+            <state line="16" column="9" selection-start="669" selection-end="669" vertical-scroll-proportion="0.51502144">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreciousScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="49" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thief_list_row.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/thief_list_row.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActivityTabbar.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/tabbar/ActivityTabbar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="11" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvidenceScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="13" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="precious_screen.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/precious_screen.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="66" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThiefScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/ThiefScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="46" selection-start="3553" selection-end="3553" vertical-scroll-proportion="-31.2">
+              <folding>
+                <element signature="e#1862#1870#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,7 +141,16 @@
       <file leaf-file-name="precious_list_row.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/precious_list_row.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="34" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThiefV.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/thief/ThiefV.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -190,20 +181,19 @@
         <option value="$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java" />
         <option value="$PROJECT_DIR$/src/dsq/rankle/db/core/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/README.markdown" />
-        <option value="$PROJECT_DIR$/res/layout/precious_screen.xml" />
-        <option value="$PROJECT_DIR$/res/layout/thief_screen.xml" />
-        <option value="$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java" />
-        <option value="$PROJECT_DIR$/src/dsq/rankle/screen/ThiefScreen.java" />
         <option value="$PROJECT_DIR$/res/layout/precious_list_row.xml" />
         <option value="$PROJECT_DIR$/res/layout/thief_list_row.xml" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/screen/ThiefScreen.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java" />
+        <option value="$PROJECT_DIR$/res/layout/precious_screen.xml" />
+        <option value="$PROJECT_DIR$/res/layout/thief_screen.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="26" />
-    <option name="width" value="1442" />
-    <option name="height" value="875" />
+    <option name="y" value="17" />
+    <option name="width" value="1438" />
+    <option name="height" value="881" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -231,6 +221,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -646,7 +637,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -665,8 +655,8 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -706,6 +696,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -731,24 +739,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -836,12 +826,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="26" width="1442" height="875" extended-state="6" />
+    <frame x="0" y="17" width="1438" height="881" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.327654" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -852,11 +842,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2553802" sideWeight="0.6712517" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2658046" sideWeight="0.672346" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -916,34 +906,39 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/icon_disabled.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/precious/PreciousV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/icon_box.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/general/Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/icon_add.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/thief/ThiefFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/icon2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/thief/ThiefId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/thief/ThiefName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/icon_edit.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/api/DbLifecycle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/thief/ThiefV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/core/DatabaseHelper.java">
@@ -953,77 +948,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.markdown">
+    <entry file="file://$PROJECT_DIR$/res/layout/precious_list_row.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="42" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/precious/PreciousTable.java">
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+        <state line="4" column="13" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/precious_screen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="35" selection-start="2218" selection-end="2218" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/thief_screen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="35" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="10" selection-start="4467" selection-end="4623" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2185#2196#0" expanded="true" />
-            <element signature="e#2796#2815#0" expanded="true" />
-            <element signature="e#3346#3369#0" expanded="true" />
-            <element signature="e#3638#3657#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/ThiefScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="111" selection-start="3640" selection-end="3640" vertical-scroll-proportion="0.0">
+        <state line="88" column="46" selection-start="3553" selection-end="3553" vertical-scroll-proportion="-31.2">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1861#1869#0" expanded="true" />
-            <element signature="e#2452#2471#0" expanded="true" />
-            <element signature="e#2990#3013#0" expanded="true" />
-            <element signature="e#3276#3295#0" expanded="true" />
+            <element signature="e#1862#1870#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/thief/ThiefTable.java">
+    <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/tabbar/ActivityTabbar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="46" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/precious_list_row.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+        <state line="14" column="11" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/thief_list_row.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="48" selection-start="456" selection-end="456" vertical-scroll-proportion="0.1985294">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="49" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/precious_screen.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="66" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/thief_screen.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="9" selection-start="669" selection-end="669" vertical-scroll-proportion="0.51502144">
           <folding />
         </state>
       </provider>

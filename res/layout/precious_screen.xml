@@ -7,19 +7,19 @@
               android:orientation="vertical">
 
     <LinearLayout style="@style/Tabbar">
-        <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
+        <dsq.sycophant.layout.tabbar.button.DefaultActivityTabIcon
                 android:id="@+id/precious_tab_precious"
                 dsq:icon="house"
                 android:paddingTop="0px"
                 style="@style/TabbarIcon"/>
 
-        <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
+        <dsq.sycophant.layout.tabbar.button.DefaultActivityTabIcon
                 android:id="@+id/precious_tab_thief"
                 dsq:icon="thief"
                 android:paddingTop="0px"
                 style="@style/TabbarIcon"/>
 
-        <dsq.sycophant.layout.tabbar.button.DefaultButtonIcon
+        <dsq.sycophant.layout.tabbar.button.DefaultActivityTabIcon
                 android:id="@+id/precious_tab_evidence"
                 dsq:icon="evidence"
                 android:paddingTop="0px"
