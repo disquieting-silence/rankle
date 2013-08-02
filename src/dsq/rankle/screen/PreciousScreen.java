@@ -11,6 +11,8 @@ import dsq.rankle.db.api.DbLifecycle;
 import dsq.rankle.db.api.DefaultDbLifecycle;
 import dsq.rankle.db.precious.DefaultPreciousDbAdapter;
 import dsq.rankle.db.precious.PreciousDbAdapter;
+import dsq.rankle.ui.common.DefaultTabbars;
+import dsq.rankle.ui.common.Tabbars;
 import dsq.rankle.ui.precious.DefaultPreciousListDefinition;
 import dsq.rankle.ui.precious.PreciousListDefinition;
 import dsq.sycophant.action.IdAction;
@@ -46,6 +48,7 @@ public class PreciousScreen extends ListActivity {
     private PreciousDbAdapter adapter;
     private final Dialogs dialogs = new DefaultDialogs();
     private SelectableDataList<PreciousV> list;
+    private final Tabbars tabbars = new DefaultTabbars();
 
     private SingleAction<PreciousV> refreshList = new SingleAction<PreciousV>() {
         @Override
@@ -83,13 +86,7 @@ public class PreciousScreen extends ListActivity {
         final Buttons buttons = new DefaultButtons(this, buttonActions);
         buttons.register();
 
-        final Map<Integer, Class<?>> tabActions = new HashMap<Integer, Class<?>>();
-        tabActions.put(R.id.precious_tab_precious, PreciousScreen.class);
-        tabActions.put(R.id.precious_tab_thief, ThiefScreen.class);
-        tabActions.put(R.id.precious_tab_evidence, EvidenceScreen.class);
-        final Tabbar tabs = new ActivityTabbar(this, tabActions);
-        tabs.register();
-
+        final Tabbar tabs = tabbars.add(this);
         tabs.select(R.id.precious_tab_precious);
 
         list.onSelect(new ItemAction<PreciousV>() {
