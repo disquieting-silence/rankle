@@ -1,6 +1,7 @@
 package dsq.rankle.screen;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import dsq.rankle.R;
 import dsq.rankle.ui.common.DefaultTabbars;

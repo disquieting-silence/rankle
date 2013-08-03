@@ -5,6 +5,9 @@ import android.app.ListActivity;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ViewGroup;
+import android.view.ViewManager;
+import android.view.WindowManager;
 import dsq.rankle.R;
 import dsq.rankle.data.precious.PreciousV;
 import dsq.rankle.db.api.DbLifecycle;
@@ -124,6 +127,14 @@ public class PreciousScreen extends ListActivity {
 
     @Override
     protected Dialog onCreateDialog(final int id) {
+        final Dialog dialog = createBasicDialog(id);
+        if (dialog != null) {
+            dialog.getWindow().setLayout(WindowManager.LayoutParams.FILL_PARENT, WindowManager.LayoutParams.FILL_PARENT);
+        }
+        return dialog;
+    }
+
+    private Dialog createBasicDialog(final int id) {
         switch (id) {
             case ADD_PRECIOUS: return dialogs.create(this, adapter, "Precious: ", NAME, refreshList);
             case RENAME_PRECIOUS: return dialogs.update(this, adapter, "Rename: ", RENAME_PRECIOUS_DIALOG, NAME, refreshList);
