@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SimpleCursorAdapter;
@@ -22,6 +23,7 @@ import dsq.rankle.ui.dialog.DialogConstants;
 import dsq.thedroid.db.DbAdapter;
 
 import static dsq.rankle.ui.dialog.DialogConstants.ASSIGN_PRECIOUS_ID;
+import static dsq.rankle.ui.dialog.DialogConstants.ASSIGN_THIEF_ID;
 
 public class BlameScreen extends Activity {
     private final DbLifecycle lifecycle = new DefaultDbLifecycle();
@@ -56,7 +58,7 @@ public class BlameScreen extends Activity {
             @Override
             public void onClick(final View view) {
                 final Intent intent = new Intent();
-                final long selectedItemId = precious.isEnabled() ? precious.getSelectedItemId() : getEditId(savedInstanceState);
+                final long selectedItemId = precious.isEnabled() ? precious.getSelectedItemId() : getEditId(savedInstanceState, ASSIGN_PRECIOUS_ID);
                 intent.putExtra(EvidenceTable.PRECIOUS_ID, selectedItemId);
                 intent.putExtra(EvidenceTable.THIEF_ID, thief.getSelectedItemId());
                 setResult(Activity.RESULT_OK, intent);
@@ -64,18 +66,31 @@ public class BlameScreen extends Activity {
             }
         });
 
-        long preciousId = getEditId(savedInstanceState);
-        if (preciousId > -1) precious.setEnabled(false);
+        long preciousId = getEditId(savedInstanceState, ASSIGN_PRECIOUS_ID);
+        if (preciousId > -1) {
+            precious.setEnabled(false);
+            for (int i = 0; i < precious.getCount(); i++) {
+                Log.v("RANKLE", "selection: " + preciousId + ", " + precious.getItemIdAtPosition(i));
+                if (precious.getItemIdAtPosition(i) == preciousId) precious.setSelection(i);
+            }
+        }
+
+        long thiefId = getEditId(savedInstanceState, ASSIGN_THIEF_ID);
+        if (thiefId > -1) {
+            for (int i = 0; i < thief.getCount(); i++) {
+                if (thief.getItemIdAtPosition(i) == thiefId) thief.setSelection(i);
+            }
+        }
     }
 
-    private long getEditId(final Bundle state) {
+    private long getEditId(final Bundle state, final String id) {
         final Intent intent = getIntent();
         if (state != null && intent != null) {
-           return state.getLong(ASSIGN_PRECIOUS_ID, intent.getLongExtra(ASSIGN_PRECIOUS_ID, -1));
+           return state.getLong(id, intent.getLongExtra(id, -1));
         } else if (state != null) {
-           return state.getLong(ASSIGN_PRECIOUS_ID, -1);
+           return state.getLong(id, -1);
         } else if (intent != null) {
-           return intent.getLongExtra(ASSIGN_PRECIOUS_ID, -1);
+           return intent.getLongExtra(id, -1);
         } else {
             return -1;
         }

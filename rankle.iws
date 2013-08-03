@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c0ba5e7-c629-437f-8171-a99e414f4984" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/blame_screen.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/screen/BlameScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rankle.iws" afterPath="$PROJECT_DIR$/rankle.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/evidence_list_row.xml" afterPath="$PROJECT_DIR$/res/layout/evidence_list_row.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/evidence_screen.xml" afterPath="$PROJECT_DIR$/res/layout/evidence_screen.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/screen/BlameScreen.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/screen/BlameScreen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/ui/evidence/DefaultEvidenceListDefinition.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/ui/evidence/DefaultEvidenceListDefinition.java" />
     </list>
     <ignored path="rankle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,10 +63,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EvidenceScreen.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="EvidenceScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="31" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.0">
+            <state line="124" column="25" selection-start="4790" selection-end="4790" vertical-scroll-proportion="0.6988764">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,11 +74,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IdAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/action/IdAction.java">
+      <file leaf-file-name="DefaultEvidenceFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/evidence/DefaultEvidenceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="17" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="22" column="22" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,19 +94,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DialogConstants.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java">
+      <file leaf-file-name="DefaultEvidenceListDefinition.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/evidence/DefaultEvidenceListDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="46" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+            <state line="27" column="76" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlameScreen.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DialogConstants.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="67" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlameScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/BlameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="9" selection-start="3302" selection-end="3302" vertical-scroll-proportion="0.8079659">
+            <state line="92" column="40" selection-start="3890" selection-end="3890" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,43 +126,34 @@
       <file leaf-file-name="PreciousScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="46" selection-start="4903" selection-end="4903" vertical-scroll-proportion="0.0">
+            <state line="84" column="21" selection-start="2960" selection-end="3179" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dialogs.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/dialog/Dialogs.java">
+      <file leaf-file-name="ThiefScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/ThiefScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="15" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+            <state line="42" column="13" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultDialogs.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/dialog/DefaultDialogs.java">
+      <file leaf-file-name="DefaultPreciousListDefinition.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/precious/DefaultPreciousListDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+            <state line="8" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <file leaf-file-name="DefaultThiefListDefinition.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/thief/DefaultThiefListDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="49" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="45" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0">
+            <state line="10" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -180,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/dsq/rankle/data/evidence/EvidenceFactory.java" />
         <option value="$PROJECT_DIR$/src/dsq/rankle/data/evidence/DefaultEvidenceFactory.java" />
         <option value="$PROJECT_DIR$/res/layout/evidence_row.xml" />
-        <option value="$PROJECT_DIR$/src/dsq/rankle/ui/evidence/DefaultEvidenceListDefinition.java" />
         <option value="$PROJECT_DIR$/src/dsq/rankle/db/evidence/EvidenceTable.java" />
         <option value="$PROJECT_DIR$/src/dsq/rankle/db/evidence/DefaultEvidenceDbAdapter.java" />
         <option value="$PROJECT_DIR$/src/dsq/rankle/db/core/DatabaseHelper.java" />
@@ -191,8 +187,9 @@
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java" />
-        <option value="$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java" />
         <option value="$PROJECT_DIR$/src/dsq/rankle/screen/BlameScreen.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/ui/evidence/DefaultEvidenceListDefinition.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java" />
       </list>
     </option>
   </component>
@@ -942,7 +939,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327654" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.327654" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1017,65 +1014,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/datalist/DefaultSelectableDataList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="62" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/thief_list_row.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="488" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/evidence/EvidenceV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/evidence_list_row.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="40" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/evidence_screen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="19" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/blame_screen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="19" selection-start="1575" selection-end="1575" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/dialog/DefaultDialogs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/dialog/Dialogs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="15" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="46" selection-start="4903" selection-end="4903" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1094,13 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/evidence/DefaultEvidenceDbAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/action/IdAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="17" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
@@ -1108,25 +1042,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java">
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/evidence/EvidenceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="46" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+        <state line="5" column="17" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/evidence/EvidenceV.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="31" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.0">
+        <state line="11" column="28" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="67" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/BlameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="40" selection-start="3890" selection-end="3890" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/BlameScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/evidence/DefaultEvidenceDbAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="9" selection-start="3302" selection-end="3302" vertical-scroll-proportion="0.8079659">
+        <state line="12" column="13" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/evidence/DefaultEvidenceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="22" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="21" selection-start="2960" selection-end="3179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/ThiefScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="13" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/thief/DefaultThiefListDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/precious/DefaultPreciousListDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/evidence/DefaultEvidenceListDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="76" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="25" selection-start="4790" selection-end="4790" vertical-scroll-proportion="0.6988764">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

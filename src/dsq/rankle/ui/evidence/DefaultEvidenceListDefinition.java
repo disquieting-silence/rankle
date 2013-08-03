@@ -25,7 +25,7 @@ public class DefaultEvidenceListDefinition implements EvidenceListDefinition {
 
     @Override
     public EvidenceV build(final Cursor c) {
-        return c.moveToFirst() ? safeBuild(c) :factory.nu(-1, new ContentValues());
+        return c.moveToFirst() ? safeBuild(c) :factory.nu(-1, -1, "", -1, "");
     }
 
     private EvidenceV safeBuild(final Cursor c) {

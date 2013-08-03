@@ -11,4 +11,5 @@ public class DialogConstants {
     public static final int ADD_EVIDENCE = 5;
     public static final int EDIT_EVIDENCE = 6;
     public static final String ASSIGN_PRECIOUS_ID = "ASSIGN_PRECIOUS_ID";
+    public static final String ASSIGN_THIEF_ID = "ASSIGN_THIEF_ID";
 }

@@ -13,6 +13,7 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
 import dsq.rankle.R;
 import dsq.rankle.data.evidence.EvidenceV;
+import dsq.rankle.data.precious.PreciousV;
 import dsq.rankle.db.api.DbLifecycle;
 import dsq.rankle.db.api.DefaultDbLifecycle;
 import dsq.rankle.db.evidence.DefaultEvidenceDbAdapter;
@@ -28,6 +29,7 @@ import dsq.rankle.ui.dialog.DialogConstants;
 import dsq.rankle.ui.evidence.DefaultEvidenceListDefinition;
 import dsq.rankle.ui.evidence.EvidenceListDefinition;
 import dsq.sycophant.action.IdAction;
+import dsq.sycophant.action.ItemAction;
 import dsq.sycophant.action.SimpleAction;
 import dsq.sycophant.datalist.DefaultSelectableDataList;
 import dsq.sycophant.datalist.SelectableDataList;
@@ -57,6 +59,8 @@ public class EvidenceScreen extends ListActivity {
 
     private Activity self = this;
 
+    private EvidenceV evidence;
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +79,14 @@ public class EvidenceScreen extends ListActivity {
         final Buttons buttons = setupButtons();
         buttons.register();
 
+        list.onSelect(new ItemAction<EvidenceV>() {
+            @Override
+            public void run(final long id, final EvidenceV v) {
+                cid.set(id);
+                evidence = v;
+                commands.update();
+            }
+        });
         list.refresh();
     }
 
@@ -97,7 +109,11 @@ public class EvidenceScreen extends ListActivity {
             @Override
             public void run(final long id) {
                 final Intent intent = new Intent(self, BlameScreen.class);
-                intent.putExtra(DialogConstants.ASSIGN_PRECIOUS_ID, id);
+                if (evidence != null) {
+                    intent.putExtra(DialogConstants.ASSIGN_PRECIOUS_ID, evidence.precious.value);
+                    intent.putExtra(DialogConstants.ASSIGN_THIEF_ID, evidence.thief.value);
+                }
+
                 startActivityForResult(intent, DialogConstants.EDIT_EVIDENCE);
             }
         });
