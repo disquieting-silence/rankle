@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ItemScreen</string>
+    <string name="app_name">Rankle</string>
     <string name="precious_screen_list_empty">No precious.</string>
     <string name="thief_screen_list_empty">Lots of honour. No thieves.</string>
+    <string name="thief_spinner">Point the finger at ...</string>
+    <string name="precious_spinner">Your precious</string>
 </resources>

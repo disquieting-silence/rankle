@@ -15,5 +15,7 @@
         </activity>
         <activity android:name=".screen.EvidenceScreen">
         </activity>
+        <activity android:name=".screen.BlameScreen">
+        </activity>
     </application>
 </manifest> 
