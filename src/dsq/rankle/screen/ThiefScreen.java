@@ -11,6 +11,8 @@ import dsq.rankle.db.api.DbLifecycle;
 import dsq.rankle.db.api.DefaultDbLifecycle;
 import dsq.rankle.db.thief.DefaultThiefDbAdapter;
 import dsq.rankle.db.thief.ThiefDbAdapter;
+import dsq.rankle.ui.common.DefaultTabbars;
+import dsq.rankle.ui.common.Tabbars;
 import dsq.rankle.ui.thief.DefaultThiefListDefinition;
 import dsq.rankle.ui.thief.ThiefListDefinition;
 import dsq.sycophant.action.IdAction;
@@ -45,6 +47,7 @@ public class ThiefScreen extends ListActivity {
     private ThiefDbAdapter adapter;
     private final Dialogs dialogs = new DefaultDialogs();
     private SelectableDataList<ThiefV> list;
+    private final Tabbars tabbars = new DefaultTabbars();
 
     private SingleAction<ThiefV> refreshList = new SingleAction<ThiefV>() {
         @Override
@@ -64,32 +67,14 @@ public class ThiefScreen extends ListActivity {
 
         list.refresh();
 
-        final Map<Integer, IdAction> actions = new HashMap<Integer, IdAction>();
-        actions.put(R.id.thief_screen_edit, new TextDialogIdAction(this, RENAME_THIEF_DIALOG, RENAME_THIEF));
-        actions.put(R.id.thief_screen_delete, new IdAction() {
-            @Override
-            public void run(final long id) {
-                adapter.deleteById(id);
-                list.refresh();
-            }
-        });
-        final Commandbar commands = new DefaultCommandbar(this, actions, cid);
+        final Commandbar commands = setupCommands();
         commands.register();
 
-        final Map<Integer, SimpleAction> buttonActions = new HashMap<Integer, SimpleAction>();
-        buttonActions.put(R.id.thief_screen_add, new TextDialogSimpleAction(this, ADD_THIEF));
-
-        final Buttons buttons = new DefaultButtons(this, buttonActions);
+        final Buttons buttons = setupButtons();
         buttons.register();
 
-        final Map<Integer, Class<?>> tabActions = new HashMap<Integer, Class<?>>();
-        tabActions.put(R.id.thief_tab_precious, PreciousScreen.class);
-        tabActions.put(R.id.thief_tab_thief, ThiefScreen.class);
-        tabActions.put(R.id.thief_tab_evidence, EvidenceScreen.class);
-        final Tabbar tabs = new ActivityTabbar(this, tabActions);
-        tabs.register();
-
-        tabs.select(R.id.thief_tab_thief);
+        final Tabbar tabs = tabbars.add(this);
+        tabs.select(R.id.tab_thief);
 
         list.onSelect(new ItemAction<ThiefV>() {
             @Override
@@ -99,6 +84,26 @@ public class ThiefScreen extends ListActivity {
                 commands.update();
             }
         });
+    }
+
+    private Buttons setupButtons() {
+        final Map<Integer, SimpleAction> buttonActions = new HashMap<Integer, SimpleAction>();
+        buttonActions.put(R.id.thief_screen_add, new TextDialogSimpleAction(this, ADD_THIEF));
+
+        return new DefaultButtons(this, buttonActions);
+    }
+
+    private Commandbar setupCommands() {
+        final Map<Integer, IdAction> actions = new HashMap<Integer, IdAction>();
+        actions.put(R.id.thief_screen_edit, new TextDialogIdAction(this, RENAME_THIEF_DIALOG, RENAME_THIEF));
+        actions.put(R.id.thief_screen_delete, new IdAction() {
+            @Override
+            public void run(final long id) {
+                adapter.deleteById(id);
+                list.refresh();
+            }
+        });
+        return new DefaultCommandbar(this, actions, cid);
     }
 
     private ThiefDbAdapter getAdapter() {

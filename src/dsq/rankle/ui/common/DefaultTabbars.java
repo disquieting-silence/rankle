@@ -15,9 +15,9 @@ public class DefaultTabbars implements Tabbars {
     @Override
     public Tabbar add(Activity target) {
         final Map<Integer, Class<?>> tabActions = new HashMap<Integer, Class<?>>();
-        tabActions.put(R.id.precious_tab_precious, PreciousScreen.class);
-        tabActions.put(R.id.precious_tab_thief, ThiefScreen.class);
-        tabActions.put(R.id.precious_tab_evidence, EvidenceScreen.class);
+        tabActions.put(R.id.tab_precious, PreciousScreen.class);
+        tabActions.put(R.id.tab_thief, ThiefScreen.class);
+        tabActions.put(R.id.tab_evidence, EvidenceScreen.class);
         final Tabbar tabs = new ActivityTabbar(target, tabActions);
         tabs.register();
         return tabs;

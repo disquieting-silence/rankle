@@ -42,7 +42,7 @@
                   android:text="@string/thief_screen_list_empty"/>
     </LinearLayout>
 
-    <ImageButton android:id="@+id/thief_screen_add"
+    <ImageButton android:id="@+id/evidence_screen_add"
                  android:layout_width="fill_parent"
                  android:layout_height="wrap_content"
                  android:src="@drawable/icon_add"/>
@@ -50,13 +50,13 @@
 
     <LinearLayout style="@style/Commandbar">
         <dsq.sycophant.layout.commandbar.button.DefaultButtonIcon
-                android:id="@+id/thief_screen_edit"
+                android:id="@+id/evidence_screen_edit"
                 dsq:icon="icon_edit"
                 android:paddingTop="8px"
                 style="@style/CommandbarIcon"/>
 
         <dsq.sycophant.layout.commandbar.button.DefaultButtonIcon
-                android:id="@+id/thief_screen_delete"
+                android:id="@+id/evidence_screen_delete"
                 dsq:icon="icon_delete"
                 android:paddingTop="8px"
                 style="@style/CommandbarIcon"/>

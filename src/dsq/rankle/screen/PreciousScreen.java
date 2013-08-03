@@ -68,6 +68,32 @@ public class PreciousScreen extends ListActivity {
 
         list.refresh();
 
+        final Commandbar commands = setupCommandbar();
+        commands.register();
+
+        final Buttons buttons = setupButtons();
+        buttons.register();
+
+        final Tabbar tabs = tabbars.add(this);
+        tabs.select(R.id.tab_precious);
+
+        list.onSelect(new ItemAction<PreciousV>() {
+            @Override
+            public void run(final long id, final PreciousV v) {
+                cid.set(id);
+                commands.update();
+            }
+        });
+    }
+
+    private Buttons setupButtons() {
+        final Map<Integer, SimpleAction> buttonActions = new HashMap<Integer, SimpleAction>();
+        buttonActions.put(R.id.precious_screen_add, new TextDialogSimpleAction(this, ADD_PRECIOUS));
+
+        return new DefaultButtons(this, buttonActions);
+    }
+
+    private Commandbar setupCommandbar() {
         final Map<Integer, IdAction> actions = new HashMap<Integer, IdAction>();
         actions.put(R.id.precious_screen_edit, new TextDialogIdAction(this, RENAME_PRECIOUS_DIALOG, RENAME_PRECIOUS));
         actions.put(R.id.precious_screen_delete, new IdAction() {
@@ -77,26 +103,7 @@ public class PreciousScreen extends ListActivity {
                 list.refresh();
             }
         });
-        final Commandbar commands = new DefaultCommandbar(this, actions, cid);
-        commands.register();
-
-        final Map<Integer, SimpleAction> buttonActions = new HashMap<Integer, SimpleAction>();
-        buttonActions.put(R.id.precious_screen_add, new TextDialogSimpleAction(this, ADD_PRECIOUS));
-
-        final Buttons buttons = new DefaultButtons(this, buttonActions);
-        buttons.register();
-
-        final Tabbar tabs = tabbars.add(this);
-        tabs.select(R.id.precious_tab_precious);
-
-        list.onSelect(new ItemAction<PreciousV>() {
-            @Override
-            public void run(final long id, final PreciousV v) {
-                Log.v("RANKLE", "Selecting: " + id);
-                cid.set(id);
-                commands.update();
-            }
-        });
+        return new DefaultCommandbar(this, actions, cid);
     }
 
     private PreciousDbAdapter getAdapter() {

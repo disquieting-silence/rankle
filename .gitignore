@@ -1,7 +1,7 @@
-out
+/out
 ersatz.iws
-bin
-gen
+/bin
+/gen
 local.properties
 proguard.cfg
 ets
