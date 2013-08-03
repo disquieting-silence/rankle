@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c0ba5e7-c629-437f-8171-a99e414f4984" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/R.java.d" afterPath="$PROJECT_DIR$/gen/R.java.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/dsq/rankle/R.java" afterPath="$PROJECT_DIR$/gen/dsq/rankle/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/dsq/thedroid/R.java" afterPath="$PROJECT_DIR$/gen/dsq/thedroid/R.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/evidence_list_row.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/data/evidence/DefaultEvidenceFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/data/evidence/EvidenceFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/data/evidence/EvidenceId.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/data/evidence/EvidenceV.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/db/evidence/DefaultEvidenceDbAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/db/evidence/EvidenceDbAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/db/evidence/EvidenceTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/db/evidence/EvidenceView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/ui/evidence/DefaultEvidenceListDefinition.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dsq/rankle/ui/evidence/EvidenceListDefinition.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rankle.iws" afterPath="$PROJECT_DIR$/rankle.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/db/core/DatabaseHelper.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/db/core/DatabaseHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java" afterPath="$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java" />
     </list>
     <ignored path="rankle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,70 +73,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ThiefScreen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/ThiefScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="32" selection-start="4041" selection-end="4041" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#3166#3189#0" expanded="true" />
-                <element signature="e#3451#3470#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="precious_screen.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/precious_screen.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="56" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DialogConstants.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="66" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PreciousScreen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="46" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#3292#3315#0" expanded="true" />
-                <element signature="e#3585#3604#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultDialogs.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/dialog/DefaultDialogs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="45" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultTextDialog.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/dialog/DefaultTextDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="8" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EvidenceScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="39" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+            <state line="37" column="69" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,10 +84,82 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <file leaf-file-name="DefaultEvidenceListDefinition.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/evidence/DefaultEvidenceListDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="19" selection-start="731" selection-end="731" vertical-scroll-proportion="0.51502144">
+            <state line="23" column="47" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultEvidenceDbAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/evidence/DefaultEvidenceDbAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="104" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evidence_list_row.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/evidence_list_row.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="36" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evidence_screen.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/evidence_screen.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="precious_list_row.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/precious_list_row.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/core/DatabaseHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="49" selection-start="1312" selection-end="1312" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvidenceView.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/evidence/EvidenceView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="42" selection-start="655" selection-end="655" vertical-scroll-proportion="0.2708018">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultDbHelper.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../libs/thedroid/bin/classes.jar!/dsq/thedroid/db/DefaultDbHelper.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="11" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvidenceTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/evidence/EvidenceTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="51" selection-start="198" selection-end="1833" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -161,22 +180,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/precious_list_row.xml" />
-        <option value="$PROJECT_DIR$/res/layout/thief_list_row.xml" />
-        <option value="$PROJECT_DIR$/src/dsq/rankle/ui/common/ActionKeys.java" />
-        <option value="$PROJECT_DIR$/src/dsq/rankle/ui/common/DefaultEditDeleteCommands.java" />
-        <option value="$PROJECT_DIR$/res/layout/evidence_screen.xml" />
-        <option value="$PROJECT_DIR$/res/layout/precious_screen.xml" />
-        <option value="$PROJECT_DIR$/res/layout/thief_screen.xml" />
-        <option value="$PROJECT_DIR$/src/dsq/rankle/screen/ThiefScreen.java" />
-        <option value="$PROJECT_DIR$/src/dsq/rankle/ui/common/DefaultTabbars.java" />
-        <option value="$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java" />
-        <option value="$PROJECT_DIR$/res/layout/text_input.xml" />
-        <option value="$PROJECT_DIR$/src/dsq/rankle/screen/TextScreen.java" />
-        <option value="$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java" />
         <option value="$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/dialog/DefaultTextDialog.java" />
-        <option value="$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/data/evidence/CurrentStatus.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/data/evidence/EvidenceId.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/db/evidence/EvidenceDpAdapter.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/ui/evidence/EvidenceListDefinition.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/data/evidence/EvidenceV.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/data/evidence/EvidenceFactory.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/data/evidence/DefaultEvidenceFactory.java" />
+        <option value="$PROJECT_DIR$/res/layout/evidence_row.xml" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/ui/evidence/DefaultEvidenceListDefinition.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/db/evidence/EvidenceTable.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/db/evidence/DefaultEvidenceDbAdapter.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/db/core/DatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/src/dsq/rankle/db/evidence/EvidenceView.java" />
       </list>
     </option>
   </component>
@@ -211,7 +230,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -288,6 +306,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="precious" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rankle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rankle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dsq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rankle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evidence" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -463,6 +511,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="evidence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rankle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rankle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dsq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rankle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -597,11 +675,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
+              <option name="myItemId" value="dsq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rankle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="evidence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rankle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rankle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -623,40 +727,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rankle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rankle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-mdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rankle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rankle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -675,16 +748,19 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dsq.rankle.data.evidence" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="dsq.rankle.ui.evidence" />
+      <recent name="dsq.rankle.db.evidence" />
+      <recent name="dsq.rankle.data.evidence" />
       <recent name="dsq.rankle.ui.common" />
       <recent name="dsq.rankle.db.thief" />
-      <recent name="dsq.rankle.ui.thief" />
-      <recent name="dsq.rankle.data.thief" />
-      <recent name="dsq.rankle.data.precious" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="dsq.rankle.db.api" />
@@ -716,6 +792,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -741,24 +835,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -851,21 +927,21 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.327654" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327654" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27658045" sideWeight="0.672346" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2801724" sideWeight="0.672346" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327654" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -926,110 +1002,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/local.properties">
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/data/evidence/EvidenceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="5" column="26" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ant.properties">
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/precious/DefaultPreciousListDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/common/DefaultTabbars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/thief_list_row.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/thief_screen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="33" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/evidence_screen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="69" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.0">
+        <state line="19" column="45" selection-start="529" selection-end="547" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/ThiefScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="32" selection-start="4041" selection-end="4041" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#3166#3189#0" expanded="true" />
-            <element signature="e#3451#3470#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/precious_screen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="56" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0">
+        <state line="43" column="69" selection-start="1627" selection-end="1690" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/dialog/DialogConstants.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/thief_list_row.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="66" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="488" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/PreciousScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="46" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#3292#3315#0" expanded="true" />
-            <element signature="e#3585#3604#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/dialog/DefaultDialogs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="45" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
+        <state line="114" column="10" selection-start="4027" selection-end="4178" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../sycophant/src/dsq/sycophant/ui/dialog/DefaultTextDialog.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/precious_screen.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/evidence_list_row.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="36" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/evidence_screen.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/precious_list_row.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../libs/thedroid/bin/classes.jar!/dsq/thedroid/db/DefaultDbHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="11" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/evidence/EvidenceTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="51" selection-start="198" selection-end="1833" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dsq/rankle/screen/EvidenceScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="39" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+        <state line="37" column="69" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/ui/evidence/DefaultEvidenceListDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="731" selection-end="731" vertical-scroll-proportion="0.51502144">
+        <state line="23" column="47" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/evidence/DefaultEvidenceDbAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="104" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/core/DatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="49" selection-start="1312" selection-end="1312" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dsq/rankle/db/evidence/EvidenceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="42" selection-start="655" selection-end="655" vertical-scroll-proportion="0.2708018">
           <folding />
         </state>
       </provider>
